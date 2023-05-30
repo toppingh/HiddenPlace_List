@@ -10,3 +10,6 @@ class Place(models.Model):
     review = models.FloatField()
     image = models.ImageField()
     description = models.TextField()
+
+    def __str__(self):
+        return self.name
